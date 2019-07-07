@@ -1,0 +1,171 @@
+html
+================
+<footer>
+		<div class="footer__opacity"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<span class="footer__icon__container">
+						<img src="resources/icons/newsletter.png" alt="newsletter">
+					</span>
+					<h4 class="footer__subitem__heading">Newsletter</h4>
+
+					<p class="footer__desc">
+						Subscribe now to get latest Information about New Release Movies.
+					</p>
+
+					<form class="form-inline my-2 my-lg-0">
+						<div class="input-group footer-input">
+							<input type="email" class="form-control" placeholder="Masukkan Email"
+								aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button">
+									<img src="resources/icons/mail.png" alt="find-icon">
+								</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<span class="footer__icon__container">
+						<img src="resources/icons/3d-glasses.png" alt="newsletter">
+					</span>
+					<h4 class="footer__subitem__heading">Movie Genres</h4>
+
+					<div class="row footer__lists__container">
+						<div class="col">
+							<ul>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Adventure</a></li>
+								<li><a href="#">Science Fiction</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Adventure</a></li>
+								<li><a href="#">Science Fiction</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<span class="footer__icon__container">
+						<img src="resources/icons/megaphone.png" alt="newsletter">
+					</span>
+					<h4 class="footer__subitem__heading">Thanks To</h4>
+
+					<div class="thanks__to__lists">
+						<div>
+							<a href="https://www.coolors.co" target="_blank">
+								<img src="resources/logo/logo.svg" alt="Coolors Logo">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.stackoverflow.com" target="_blank">
+								<img src="resources/logo/stackoverflow.png" alt="Stackoverflow Logo">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.flaticon.com" target="_blank">
+								<img src="resources/logo/flaticon-logo.svg" alt="Flaticon Logo">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.getbootstrap.com" target="_blank">
+								<img src="resources/logo/Boostrap_logo.svg" alt="Bootstrap Logo">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+css
+================
+footer {
+		position: relative;
+
+		background: url('../resources/images/mars_movie.jpg') center;
+		background-size: cover;
+
+		width: 100%;
+		height: auto;
+		padding: 5em 0;
+		color: #FFF;
+	}
+
+		.footer__opacity {
+			background-color: #68687f;
+			opacity: .9;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		footer .row {
+			z-index: 998;
+		}
+
+			.footer__icon__container {
+				display: inline-block;
+				height: 40px;
+				max-width: 40px;
+
+				margin-right: 10px;
+			}
+
+				.footer__icon__container img { width: 100%; height: 100%; }
+
+			h4.footer__subitem__heading { display: inline-block; }
+
+			p.footer__desc { margin-top: 1.5em; }
+
+				.footer-input button {
+					background-color: tomato;
+					border: 1px solid tomato;
+				}
+
+			.row.footer__lists__container { margin-top: 1em; }
+
+				.footer__lists__container .col { padding: 0; }
+
+					.footer__lists__container ul { list-style: none; padding-left: 0; }
+
+						.footer__lists__container ul li { margin: 10px 0; }
+
+							.footer__lists__container ul li a,
+							.footer__lists__container ul li a:visited {
+								color: #FFF;
+								opacity: .7;
+								text-decoration: none;
+								transition: .2s all;
+							}
+
+							.footer__lists__container ul li a:hover { opacity: 1 ; transition: .1s all; }
+
+			.thanks__to__lists {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+				grid-gap: 25px;
+				list-style: none;
+				padding-top: 1.85em;
+			}
+
+				.thanks__to__lists div a {
+					display: inline-block;
+					height: 25px; 
+					width: 100%;
+					color: #FFF;
+					text-decoration: none;
+				}
+
+					.thanks__to__lists div a img {
+						width: auto;
+						height: 100%;
+					}
